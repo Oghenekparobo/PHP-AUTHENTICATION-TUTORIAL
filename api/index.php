@@ -18,4 +18,4 @@ $database = new Database(
     $_ENV["DB_PASS"]
 );
 
-$database->getConnection();
+
