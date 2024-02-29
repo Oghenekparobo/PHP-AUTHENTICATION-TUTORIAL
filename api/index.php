@@ -26,3 +26,12 @@ $auth = new Authenticate($user);
 if (!$auth->authenticateAPIKey()) {
     exit;
 }
+
+$gateway = new Gateway($database);
+
+$controller = new Controller($gateway);
+
+echo $_SERVER['REQUEST_METHOD'];
+exit;
+
+$controller->processRequest($_SERVER['REQUEST_METHOD']);
