@@ -11,7 +11,11 @@ set_exception_handler('ErrorHandler::handleException');
 
 header("Content-type: application/json; charset=UTF-8");
 
-echo $_ENV["DB_HOST"] . " ";
-echo $_ENV["DB_NAME"] . " ";
-echo $_ENV["DB_USER"] . " ";
-echo $_ENV["DB_PASS"];
+$database = new Database(
+    $_ENV["DB_HOST"],
+    $_ENV["DB_NAME"],
+    $_ENV["DB_USER"],
+    $_ENV["DB_PASS"]
+);
+
+$database->getConnection();
