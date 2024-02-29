@@ -19,3 +19,10 @@ $database = new Database(
 );
 
 
+$user = new User($database);
+
+$auth = new Authenticate($user);
+
+if (!$auth->authenticateAPIKey()) {
+    exit;
+}
