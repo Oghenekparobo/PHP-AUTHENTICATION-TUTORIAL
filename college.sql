@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 07, 2024 at 11:15 AM
+-- Generation Time: Mar 07, 2024 at 01:07 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -67,14 +67,6 @@ CREATE TABLE `user` (
   `username` varchar(255) DEFAULT NULL,
   `password_hash` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `user`
---
-
-INSERT INTO `user` (`id`, `name`, `username`, `password_hash`) VALUES
-(1, 'reacher reacher', 'reach', '$2y$10$mZmh5RbR0Y.nzo6mLJH2iuELQZlVO3Hb4RIP/IQc6f.rsQ9cYpIjy'),
-(3, 'balanciaga', 'balaenciaga', '$2y$10$wj1E9ra7DyVUluTblu8r9O1C0Ae.JTrOM4WfwPFIQZYFFbD7jzB9O');
 
 --
 -- Indexes for dumped tables
