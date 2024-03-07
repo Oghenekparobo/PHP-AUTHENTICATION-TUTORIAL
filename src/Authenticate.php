@@ -26,7 +26,7 @@ class Authenticate
 
         $data = json_decode($plain_text, true);
 
-        $this->user_id = $data["id"];
+    
 
         if ($data === null) {
 
