@@ -2,7 +2,7 @@
 
 class Authenticate
 {
-        public function __construct(private User $user)
+    public function __construct(private User $user)
     {
     }
 
@@ -26,7 +26,7 @@ class Authenticate
 
         $data = json_decode($plain_text, true);
 
-    
+
 
         if ($data === null) {
 
@@ -37,6 +37,4 @@ class Authenticate
 
         return true;
     }
- 
-
 }
