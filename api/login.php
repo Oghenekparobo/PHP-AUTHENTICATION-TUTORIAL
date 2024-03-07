@@ -33,7 +33,7 @@ if (!array_key_exists('username', $data) || !array_key_exists('password', $data)
 }
 
 
-$user_gateway = new UserGateway($database);
+$user_gateway = new Gateway($database);
 
 $user = $user_gateway->getByUsername($data['username']);
 
